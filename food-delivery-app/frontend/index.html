@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress | Real-Time Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🍔 FoodieExpress</div>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>My Orders</li>
+            <li>Profile</li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchFood()" placeholder="Search for pizza, burger, salad...">
+    </div>
+
+    <div class="filter-container">
+        <button class="filter-btn" onclick="filterCategory('all')">All Menu</button>
+        <button class="filter-btn" onclick="filterCategory('fastfood')">Fast Food</button>
+        <button class="filter-btn" onclick="filterCategory('healthy')">Healthy</button>
+    </div>
+
+    <div class="checkout-box">
+        <h3>Total Bill: $<span id="total-price">0</span></h3>
+        <button class="buy-btn" onclick="checkout()">Place Order Now</button>
+    </div>
+
+    <div class="menu-container">
+        
+        <div class="food-card" data-category="fastfood">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" class="food-img" alt="Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <div class="rating"><span class="star">★</span> 4.8 <span class="reviews">(1.2k+)</span></div>
+            <p>Freshly baked with extra cheese and pepperoni.</p>
+            
+            <div class="delivery-info">
+                <span class="time">⏱ 25-35 mins</span>
+                <span class="divider">•</span>
+                <span class="promo">Free Delivery</span>
+            </div>
+            
+            <p class="price">$15.00</p>
+            <button onclick="order('Pizza', 15)">🛒 Add to Cart</button>
+        </div>
+
+        <div class="food-card" data-category="fastfood">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" class="food-img" alt="Burger">
+            <h3>Double Burger</h3>
+            <div class="rating"><span class="star">★</span> 4.5 <span class="reviews">(800+)</span></div>
+            <p>Grilled beef patty with our secret house sauce.</p>
+            
+            <div class="delivery-info">
+                <span class="time">⏱ 15-25 mins</span>
+                <span class="divider">•</span>
+                <span class="promo">Free Delivery</span>
+            </div>
+            
+            <p class="price">$10.00</p>
+            <button onclick="order('Burger', 10)">🛒 Add to Cart</button>
+        </div>
+
+        <div class="food-card" data-category="healthy">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" class="food-img" alt="Salad">
+            <h3>Greek Salad</h3>
+            <div class="rating"><span class="star">★</span> 4.9 <span class="reviews">(500+)</span></div>
+            <p>Fresh olives, feta cheese, and organic greens.</p>
+            
+            <div class="delivery-info">
+                <span class="time">⏱ 10-20 mins</span>
+                <span class="divider">•</span>
+                <span class="promo">Free Delivery</span>
+            </div>
+            
+            <p class="price">$12.00</p>
+            <button onclick="order('Salad', 12)">🛒 Add to Cart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
