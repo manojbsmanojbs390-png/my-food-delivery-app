@@ -39,4 +39,4 @@ You can view the live project here: [Insert Your GitHub Pages Link Here]
 ---
 
 ## 👨‍💻 Developer
-**[Your Name]** *Aspiring Web Developer*
+**[Manoj BS]** *Aspiring Web Developer*
