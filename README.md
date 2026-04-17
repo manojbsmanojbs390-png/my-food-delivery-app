@@ -3,7 +3,7 @@
 Welcome to **FoodieExpress**, a lightweight, responsive web application designed for a seamless food ordering experience. This project was built to demonstrate modern front-end development skills, including dynamic filtering, real-time search, and a functional shopping cart.
 
 ## 🚀 Live Demo
-You can view the live project here: [Insert Your GitHub Pages Link Here]
+You can view the live project here: [https://manojbsmanojbs390-png.github.io/my-food-delivery-app/]
 
 ---
 
